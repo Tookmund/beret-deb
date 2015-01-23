@@ -1,0 +1,11 @@
+--- a/game.c
++++ b/game.c
+@@ -88,6 +88,8 @@
+ #define DIRSEP "/"
+ #endif
+ 
++#define RESOURCE_PATH "/usr/share/beret/"
++
+ #ifndef RESOURCE_PATH
+ #if defined __APPLE__
+ #define RESOURCE_PATH "Beret.app/Contents/Resources/"
