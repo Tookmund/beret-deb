@@ -1,3 +1,6 @@
+Description: #define RESOURCE_PATH to follow FHS
+Author: Jacob Adams <tookmund@gmail.com
+
 --- a/game.c
 +++ b/game.c
 @@ -88,6 +88,8 @@

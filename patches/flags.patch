@@ -1,3 +1,6 @@
+Description: Use Debian CFLAGS and LDFLAGS as well as math library
+Author: Jacob Adams
+
 --- a/Makefile
 +++ b/Makefile
 @@ -1,5 +1,5 @@

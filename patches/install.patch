@@ -1,3 +1,6 @@
+Description: Create install target for Makefile
+Author: Jacob Adams <tookmund@gmail.com>
+
 --- a/Makefile
 +++ b/Makefile
 @@ -8,5 +8,16 @@
