@@ -1,0 +1,18 @@
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,5 @@
+-CFLAGS := $(shell sdl-config --cflags) -Wall -g
+-LDLIBS := $(shell sdl-config --libs) -lSDLmain -lSDL_image -lSDL_ttf -lSDL_mixer
++CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell sdl-config --cflags) -Wall -g
++LDLIBS := $(shell dpkg-buildflags --get LDFLAGS) $(shell sdl-config --libs) -lSDLmain -lSDL_image -lSDL_ttf -lSDL_mixer -lm
+ 
+ default: beret
+ 
+@@ -9,6 +9,7 @@
+ beret: game.o thing.o physics.o
+ 	$(CC) $^ $(LDLIBS) -o $@
+ install: beret
++	mkdir -p $(DESTDIR)/usr/games
+ 	install -m 755 beret $(DESTDIR)/usr/games
+ 	mkdir -p $(DESTDIR)/usr/share/beret/music
+ 	install -m 644 music/* $(DESTDIR)/usr/share/beret/music
