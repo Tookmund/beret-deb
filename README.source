@@ -4,5 +4,6 @@ beret for Debian
 This package is taken directly from the latest commit to
 https://gitorious.org/beret/beret/
 
+As it is directly from a git repository, I am unable to update it via watchfile
  -- Jacob Adams <tookmund@gmail.com>  Fri, 23 Jan 2015 15:24:10 -0500
 
