@@ -1,0 +1,10 @@
+--- a/Makefile
++++ b/Makefile
+@@ -9,6 +9,7 @@
+ beret: game.o thing.o physics.o
+ 	$(CC) $^ $(LDLIBS) -o $@
+ install: beret
++	mkdir -p $(DESTDIR)/usr/games
+ 	install -m 755 beret $(DESTDIR)/usr/games
+ 	mkdir -p $(DESTDIR)/usr/share/beret/music
+ 	install -m 644 music/* $(DESTDIR)/usr/share/beret/music
