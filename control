@@ -1,0 +1,15 @@
+Source: beret
+Section: unknown
+Priority: optional
+Maintainer: Jacob Adams <tookmund@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/beret.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/beret.git;a=summary
+
+Package: beret
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

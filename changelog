@@ -1,0 +1,5 @@
+beret (1.2.1+git4e2f21bf4eeabfd137b2b846756a368b42456675-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Jacob Adams <tookmund@gmail.com>  Fri, 23 Jan 2015 15:24:10 -0500
