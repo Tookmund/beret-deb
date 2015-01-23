@@ -1,15 +1,17 @@
 Source: beret
-Section: unknown
+Section: games
 Priority: optional
 Maintainer: Jacob Adams <tookmund@gmail.com>
-Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.5
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/beret.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/beret.git;a=summary
+Build-Depends: debhelper (>= 9), libsdl1.2-dev,libsdl-image1.2-dev,libsdl-mixer1.2-dev,libsdl-ttf2.0-dev
+Standards-Version: 3.9.6
+Homepage: https://gitorious.org/beret/beret/
 
 Package: beret
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsdl1.2debian,libsdl-image1.2,libsdl-mixer1.2,libsdl-ttf2.0-0
+Description: Adventures of a telekinetic scientist
+ Beret is a 2D puzzle-platformer game about a scientist named Beret who has 
+ gained telekinetic abilities through his research at the Evil Corporation. 
+ He decides that the Evil Corporation is too evil for his liking, and begins 
+ his solitary quest to overthrow the corporation and punish the evil deeds of 
+ his employers.
