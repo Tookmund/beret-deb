@@ -14,12 +14,6 @@ Files: debian/*
 Copyright: 2015 Jacob Adams <tookmund@gmail.com>
 License: LGPL-3
 
-Files: debian/patches/makefile.patch
-Copyright: 2013 Andrew Shadura <bugzilla@tut.by>
-	   2015 Jacob Adams <tookmund@gmail.com>
-License: LGPL-3
-
-
 License: LGPL-3
 
 License: OFL
