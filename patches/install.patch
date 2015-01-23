@@ -1,0 +1,24 @@
+--- a/Makefile
++++ b/Makefile
+@@ -9,4 +9,21 @@
+ beret: game.o thing.o physics.o
+ 	$(CC) $^ $(LDLIBS) -o $@
+ 
++install: beret
++	install -m 755 beret $(DESTDIR)/usr/games
++	
++	mkdir -p $(DESTDIR)/usr/share/beret/music
++	install -m 644 music/* $(DESTDIR)/usr/share/beret/music
++	
++	mkdir -p $(DESTDIR)/usr/share/beret/sfx
++	install -m 644 sfx/* $(DESTDIR)/usr/share/beret/sfx
++	
++	mkdir -p $(DESTDIR)/usr/share/beret/rooms
++	install -m 644 rooms/* $(DESTDIR)/usr/share/beret/rooms
++	
++	mkdir -p $(DESTDIR)/usr/share/beret/images
++	install -m 644 images/* $(DESTDIR)/usr/share/beret/images
++	
++	install -m 644 AveriaSans-Regular.ttf $(DESTDIR)/usr/share/beret
++		
+ %.o: %.c %.h
