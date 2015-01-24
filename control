@@ -8,10 +8,21 @@ Homepage: https://gitorious.org/beret/beret/
 
 Package: beret
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libsdl1.2debian,libsdl-image1.2,libsdl-mixer1.2,libsdl-ttf2.0-0
+Depends: beret-data, ${shlibs:Depends}, ${misc:Depends}, libsdl1.2debian,libsdl-image1.2,libsdl-mixer1.2,libsdl-ttf2.0-0
 Description: Adventures of a telekinetic scientist
  Beret is a 2D puzzle-platformer game about a scientist named Beret who has 
  gained telekinetic abilities through his research at the Evil Corporation. 
  He decides that the Evil Corporation is too evil for his liking, and begins 
  his solitary quest to overthrow the corporation and punish the evil deeds of 
  his employers.
+
+Package: beret-data
+Architecture: all
+Depends: ${misc:Depends}
+Description: Adventures of a telekinetic scientist
+ Beret is a 2D puzzle-platformer game about a scientist named Beret who has 
+ gained telekinetic abilities through his research at the Evil Corporation. 
+ He decides that the Evil Corporation is too evil for his liking, and begins 
+ his solitary quest to overthrow the corporation and punish the evil deeds of 
+ his employers.
+ This package provides the data files for beret
