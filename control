@@ -18,7 +18,7 @@ Description: Beret, the adventures of a telekinetic scientist
 
 Package: beret-data
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, fonts-averia
 Description: Data for Beret, the adventures of a telekinetic scientist
  Beret is a 2D puzzle-platformer game about a scientist named Beret who has 
  gained telekinetic abilities through his research at the Evil Corporation. 
