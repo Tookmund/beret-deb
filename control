@@ -26,3 +26,12 @@ Description: Data for Beret, the adventures of a telekinetic scientist
  his solitary quest to overthrow the corporation and punish the evil deeds of 
  his employers.
  This package provides the data files for beret
+
+Package: fonts-averia
+Architecture: all
+Depends: ${misc:Depends}
+Description: Averia TrueType Font
+ The Averia font. 
+ It is designed to be an "average" font, designed by averaging all the fonts 
+ the author could find. 
+   
