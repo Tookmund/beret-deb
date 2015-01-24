@@ -29,6 +29,7 @@ Description: Data for Beret, the adventures of a telekinetic scientist
 
 Package: fonts-averia
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: Averia TrueType Font
  The Averia font. 
