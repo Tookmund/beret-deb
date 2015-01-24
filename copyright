@@ -9,6 +9,7 @@ License: LGPL-3
 Files: AveriaSans-Regular.ttf
 Copyright: 2011 Dan Sayers <i@iotic.com>
 License: OFL
+ The text of the OFL can be found at "/usr/share/beret/OFL.txt" if beret-data is installed
 
 Files: debian/*
 Copyright: 2015 Jacob Adams <tookmund@gmail.com>
@@ -17,5 +18,3 @@ License: LGPL-3
 License: LGPL-3
  The full text of the LGPL can be found at "/usr/share/common-licenses/LGPL-3"
 
-License: OFL
- The textt of the OFL can be found at "/usr/share/beret/OFL.txt" if beret-data is installed
