@@ -6,6 +6,10 @@ include /usr/share/dpkg/default.mk
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
+get-orig-source:
+	git clone https://gitorious.org/beret/beret.git beret-git
+	tar --exclude-vcs caf beret-git beret_$(SRC_VER).orig.tar.xz
+	rm -rf beret-git
 %:
 	dh $@ 
 
