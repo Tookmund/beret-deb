@@ -5,7 +5,7 @@ Description: Use FONT_PATH instead of RESOURCE_PATH to load font
  #endif
  #endif
  
-+#define FONT_PATH "/usr/share/fonts/truetype/averia/"
++#define FONT_PATH "/usr/share/fonts/truetype/averia-sans/"
 +
 +#ifndef FONT_PATH
 +#define FONT_PATH RESOURCE_PATH
