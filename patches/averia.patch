@@ -1,0 +1,29 @@
+Description: Use FONT_PATH instead of RESOURCE_PATH to load font
+--- a/game.c
++++ b/game.c
+@@ -107,6 +107,12 @@
+ #endif
+ #endif
+ 
++#define FONT_PATH "/usr/share/fonts/truetype/averia/"
++
++#ifndef FONT_PATH
++#define FONT_PATH RESOURCE_PATH
++#endif
++
+ #define QUITMOD_WIN KMOD_ALT
+ #define QUITKEY_WIN SDLK_F4
+ #define QUITMOD_LIN KMOD_CTRL
+@@ -909,9 +915,9 @@
+   }
+ 
+   // Load fonts
+-  font = TTF_OpenFont(RESOURCE_PATH "AveriaSans-Regular.ttf", 24);
+-  smfont = TTF_OpenFont(RESOURCE_PATH "AveriaSans-Regular.ttf", 9);
+-  medfont = TTF_OpenFont(RESOURCE_PATH "AveriaSans-Regular.ttf", 16);
++  font = TTF_OpenFont(FONT_PATH "AveriaSans-Regular.ttf", 24);
++  smfont = TTF_OpenFont(FONT_PATH "AveriaSans-Regular.ttf", 9);
++  medfont = TTF_OpenFont(FONT_PATH "AveriaSans-Regular.ttf", 16);
+ 
+   // Load music
+   for (i=0; i<MUSIC_MAX; i++) {
