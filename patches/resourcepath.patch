@@ -7,7 +7,7 @@ Author: Jacob Adams <tookmund@gmail.com
  #define DIRSEP "/"
  #endif
  
-+#define RESOURCE_PATH "/usr/share/beret/"
++#define RESOURCE_PATH "/usr/share/games/beret/"
 +
  #ifndef RESOURCE_PATH
  #if defined __APPLE__
